@@ -5,7 +5,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:'Arial', sans-serif;
+    font-family:'Helvetica', sans-serif;
 }
 
 
@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .container {
@@ -31,15 +31,15 @@ body {
 
 h1 {
     
-    text-align: center;
+    text-align: left;
     color: #202020;
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
 }
 
 h2 {
-    text-align: center;
-    color: #919191;
+    text-align: left;
     font-size: 1rem;
+    color: #919191;
     margin-bottom: 0.25rem;
 }
