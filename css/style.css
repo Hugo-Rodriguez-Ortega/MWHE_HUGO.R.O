@@ -9,19 +9,24 @@
 }
 
 
-body { 
+body {
     background-color: #edeceb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    padding-left: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1em;
     margin: 1rem;
     background-color: #f9f9f9;
     border: 0.5px solid #c3c3c3;
     box-shadow: 4px 4px 4px #81727214;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 h1 {
