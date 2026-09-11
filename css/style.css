@@ -14,7 +14,9 @@ body {
 }
 
 body > div  {
-    padding: 1.5rem;
+    padding-left: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1em;
     margin: 1rem;
     background-color: #f9f9f9;
     border: 0.8px solid #616161;
@@ -23,8 +25,15 @@ body > div  {
 }
 
 h1 {
-    text-align: center;
-    color: #616161;
+    text-align: left;
+    color: #202020;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    text-align: left;
+    color: #919191;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 }
