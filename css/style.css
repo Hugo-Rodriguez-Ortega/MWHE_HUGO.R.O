@@ -1,45 +1,143 @@
 
 /* Este selector universal selecciona todos los elementos del html */
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family:'Helvetica', sans-serif;
+    font-family: 'poppins', sans-serif;
+    a {
+        text-decoration: none;
+    }
 }
 
-
-body {
-    background-color: #edeceb;
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    padding: 15px 10px;
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
 }
 
-.container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1em;
-    margin: 1rem;
-    background-color: #f9f9f9;
-    border: 0.5px solid #c3c3c3;
-    box-shadow: 4px 4px 4px #81727214;
-    border-radius: 5px;
+.logo {
+    font-size: 1rem;
+    font-weight: semi-bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    color: #141414;
+}
+
+.burger svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5;
+}
+
+header {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 h1 {
-    
-    text-align: left;
-    color: #202020;
-    font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    font-size: 2rem;
+    font-weight: regular;
 }
 
-h2 {
-    text-align: left;
+header p {
     font-size: 1rem;
-    color: #919191;
-    margin-bottom: 0.25rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background-color: #141414;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+.btn > a {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn svg {
+    width: 15px;
+    height: 15px;
+    stroke-width: 2;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #141414;
+}
+
+.btn:hover > a {
+    color: #141414;
+}
+
+@media (max-width: 768px) {
+
+    * {
+       header > div > p > br {
+            display: none;
+        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    a {
+        text-decoration: none;
+    }
+    }
+
+   
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+      
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
